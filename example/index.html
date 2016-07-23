@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Motto | Show your motto in an amazing way!</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: lightblue;
+    }
+    main {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .title {
+      font-family: Ebrima;
+      font-size: 86px;
+      margin: 0;
+      color: #fff;
+    }
+    .motto {
+      font-size: 28px;
+      margin: 10px 0;
+      font-family: Courier New;
+      color: #fff;
+    }
+    .btn {
+      color: #000;
+      margin: 0 10px;
+      font-family: Microsoft yahei;
+      color: #fff;
+    }
+    footer {
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      text-align: right;
+      font-family: Microsoft yahei;
+      color: #fff;
+    }
+    footer h6 {
+      margin: 10px;
+    }
+    footer h6 a {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="title"></h1>
+    <i class="motto"></i>
+    <div>
+      <a href="https://github.com/jrainlau/motto" class="btn btn-1"></a>
+      <a href="https://github.com/jrainlau/motto/blob/master/README.md" class="btn btn-2">Document</a>
+    </div>
+  </main>
+  <footer class="law">
+    <h6>
+      <a href="https://opensource.org/licenses/MIT">MIT LICENCE</a>
+    </h6>
+    <h6>
+        Copyright © 2016
+        <a href="http://jrainlau.github.io">Jrain Lau</a>
+    </h6>
+  </footer>
+  <script src="../motto.min.js"></script>
+  <script>
+    var motto0 = new Motto('.title', {
+      lyric: 'MottoJS',
+      flashSpeed: 200,
+      flashTimeout: 1000
+    })
+    var motto1 = new Motto('.motto', {
+      lyric: 'Show your motto in an amazing way',
+      showUpSpeed: 100,
+      flashSpeed: 100
+    })
+
+    var motto2 = new Motto('.btn-1', {
+      lyric: 'View in Github',
+      flashSpeed: 200,
+      flashTimeout: 2000
+    })
+
+    var motto3 = new Motto('.btn-2', {
+      lyric: 'Document',
+      flashSpeed: 200,
+      flashTimeout: 2000
+    })
+  </script>
+</body>
+</html>
