@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
   <title>Motto | Show your motto in an amazing way!</title>
+  <link rel="stylesheet" href="./motto.css">
   <style>
     html,
     body {
@@ -24,13 +24,11 @@
       font-family: Ebrima;
       font-size: 86px;
       margin: 0;
-      padding: 0 20px;
       color: #fff;
     }
-    .motto {
+    .mottos {
       font-size: 28px;
       margin: 10px 0;
-      padding: 0 20px;
       font-family: Courier New;
       color: #fff;
     }
@@ -58,8 +56,8 @@
 </head>
 <body>
   <main>
-    <h1 class="title"></h1>
-    <i class="motto"></i>
+    <h1 class="title motto-shake"></h1>
+    <i class="mottos"></i>
     <div>
       <a href="https://github.com/jrainlau/motto" class="btn btn-1"></a>
       <a href="https://github.com/jrainlau/motto/blob/master/README.md" class="btn btn-2">Document</a>
@@ -81,7 +79,7 @@
       flashSpeed: 200,
       flashTimeout: 1000
     })
-    var motto1 = new Motto('.motto', {
+    var motto1 = new Motto('.mottos', {
       lyric: 'Show your motto in an amazing way',
       showUpSpeed: 100,
       flashSpeed: 100
