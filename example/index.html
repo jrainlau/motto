@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Motto | Show your motto in an amazing way!</title>
+  <link rel="stylesheet" href="../css/motto.css">
   <style>
     html,
     body {
@@ -25,7 +26,7 @@
       margin: 0;
       color: #fff;
     }
-    .motto {
+    .mottos {
       font-size: 28px;
       margin: 10px 0;
       font-family: Courier New;
@@ -55,8 +56,8 @@
 </head>
 <body>
   <main>
-    <h1 class="title"></h1>
-    <i class="motto"></i>
+    <h1 class="title motto-disturb"></h1>
+    <i class="mottos"></i>
     <div>
       <a href="https://github.com/jrainlau/motto" class="btn btn-1"></a>
       <a href="https://github.com/jrainlau/motto/blob/master/README.md" class="btn btn-2">Document</a>
@@ -71,14 +72,14 @@
         <a href="http://jrainlau.github.io">Jrain Lau</a>
     </h6>
   </footer>
-  <script src="../motto.min.js"></script>
+  <script src="../js/motto.min.js"></script>
   <script>
     var motto0 = new Motto('.title', {
       lyric: 'MottoJS',
       flashSpeed: 200,
       flashTimeout: 1000
     })
-    var motto1 = new Motto('.motto', {
+    var motto1 = new Motto('.mottos', {
       lyric: 'Show your motto in an amazing way',
       showUpSpeed: 100,
       flashSpeed: 100

@@ -29,6 +29,15 @@ then use `new` to create a MottoJS instance
 ```
 var motto = new Motto(el, config)
 ```
+> if you want to add the *disturb* effect, you should link the `motto.css` to your  HTML:
+> ```
+<link rel="stylesheet" href="motto.css">
+```
+> and add a class `.motto-disturb` to the element
+> ```
+<h1 class="title motto-disturb"></h1>
+```
+
 # Params
 `MottoJS` receive two params.
 - ### el {String / HTML element} `required`
@@ -63,6 +72,9 @@ set the timeout between the messy code showed up and translated into meaningful 
 
 - #### callback {Function} `optional` `default: {}`
 a callback function after translation.
+
+# Update
+- v1.0.1: added *disturb* css effect.
 
 # License
 MIT

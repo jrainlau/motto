@@ -1,0 +1,25 @@
+{
+  "name": "motto",
+  "version": "1.0.1",
+  "description": "Show your motto in an amazing way!",
+  "main": "motto.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrainlau/motto.git"
+  },
+  "keywords": [
+    "motto"
+  ],
+  "author": "Jrain Lau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrainlau/motto/issues"
+  },
+  "homepage": "https://github.com/jrainlau/motto#readme"
+}

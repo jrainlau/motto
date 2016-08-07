@@ -42,6 +42,9 @@ Motto.prototype = {
         i++
         self.newLyric = _word
         self.el.innerHTML = _word
+
+        self.el.dataset.text = _word
+
         if (self.lyric.split('').length === i) {
           clearInterval(timer)
           setTimeout(function () {
@@ -51,6 +54,9 @@ Motto.prototype = {
       }, self.showUpSpeed)
     } else {
       self.el.innerHTML = _lyric
+
+      self.el.dataset.text = _lyric
+
       setTimeout(function () {
         self.flash(self.newLyric)
       }, self.flashTimeout)
@@ -85,7 +91,7 @@ Motto.prototype = {
                 return _lyric.indexOf(item) == index
               })
               _newLyric[i] = _lyricUnique[Math.floor((Math.random() * _lyricUnique.length))]
-              self.el.innerHTML = _newLyric.join('')
+              self.el.innerHTML = self.el.dataset.text =_newLyric.join('')
             }
           }
         } else {
