@@ -29,13 +29,13 @@ then use `new` to create a MottoJS instance
 ```
 var motto = new Motto(el, config)
 ```
-> if you want to add the *disturb* effect, you should link the `motto.css` to your  HTML:
+> if you want to add the *shake* effect, you should link the `motto.css` to your  HTML:
 > ```
 <link rel="stylesheet" href="motto.css">
 ```
-> and add a class `.motto-disturb` to the element
+> and add a class `.motto-shake` to the element
 > ```
-<h1 class="title motto-disturb"></h1>
+<h1 class="title motto-shake"></h1>
 ```
 
 # Params
@@ -74,7 +74,7 @@ set the timeout between the messy code showed up and translated into meaningful 
 a callback function after translation.
 
 # Update
-- v1.0.1: added *disturb* css effect.
+- v1.0.1: added *shake* css effect.
 
 # License
 MIT
