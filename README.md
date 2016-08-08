@@ -1,6 +1,8 @@
 # MottoJS
 Show your motto in an amazing way!
 
+> Visit [Codepen live demo](http://codepen.io/jrainlau/pen/vKQKEA) here
+
 # Installation
 npm
 ```
@@ -78,4 +80,3 @@ a callback function after translation.
 
 # License
 MIT
-
