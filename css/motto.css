@@ -1,4 +1,4 @@
-.motto-disturb {
+.motto-shake {
   position: relative;
 }
 
@@ -67,7 +67,7 @@
     clip: rect(8px, 9999px, 51px, 0);
   }
 }
-.motto-disturb:after {
+.motto-shake:after {
   content: attr(data-text);
   position: absolute;
   left: 2px;
@@ -145,7 +145,7 @@
     clip: rect(27px, 9999px, 57px, 0);
   }
 }
-.motto-disturb:before {
+.motto-shake:before {
   content: attr(data-text);
   position: absolute;
   left: -2px;
