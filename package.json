@@ -1,8 +1,8 @@
 {
   "name": "motto",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Show your motto in an amazing way!",
-  "main": "motto.js",
+  "main": "js/motto.min.js",
   "directories": {
     "example": "example"
   },
